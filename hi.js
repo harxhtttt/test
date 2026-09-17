@@ -26,7 +26,7 @@ function matchOrdersToInventory(orders, inventory, discountCodes) {
 
         matchedOrders.push(order);
 
-        if (discountCodes.includes(order.code)) {
+if (discountSet.has(order.code)) {
           appliedDiscounts.push(order.id);
         }
 
